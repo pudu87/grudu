@@ -1,0 +1,52 @@
+/* ------------------
+        GRID
+------------------ */
+
+
+.container-resp,
+.container-full {
+  padding: 0 15px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 15px;
+}
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    grid-column: span #{$i};
+  }
+}
+
+@media (min-width: 480px) {
+  .container-resp {
+    width: 420px;
+  }
+  @for $i from 1 through 12 {
+    .col-s-#{$i} {
+      grid-column: span #{$i};
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container-resp {
+    width: 720px;
+  }
+  @for $i from 1 through 12 {
+    .col-m-#{$i} {
+      grid-column: span #{$i};
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-resp {
+    width: 1024px;
+  }
+  @for $i from 1 through 12 {
+    .col-l-#{$i} {
+      grid-column: span #{$i};
+    }
+  }
+}

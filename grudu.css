@@ -1,0 +1,443 @@
+/* ------------------
+        RESET
+------------------ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ------------------
+        TEXT
+------------------ */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* HEADINGS */
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 21px;
+}
+
+h4 {
+  font-size: 19px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 15px;
+}
+
+/* MARGINS */
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul,
+pre, table, address, fieldset, figure {
+  margin-bottom: 20px;
+}
+
+/* ------------------
+        GRID
+------------------ */
+.container-resp,
+.container-full {
+  padding: 0 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 15px;
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-10 {
+  grid-column: span 10;
+}
+
+.col-11 {
+  grid-column: span 11;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+
+@media (min-width: 480px) {
+  .container-resp {
+    width: 420px;
+  }
+
+  .col-s-1 {
+    grid-column: span 1;
+  }
+
+  .col-s-2 {
+    grid-column: span 2;
+  }
+
+  .col-s-3 {
+    grid-column: span 3;
+  }
+
+  .col-s-4 {
+    grid-column: span 4;
+  }
+
+  .col-s-5 {
+    grid-column: span 5;
+  }
+
+  .col-s-6 {
+    grid-column: span 6;
+  }
+
+  .col-s-7 {
+    grid-column: span 7;
+  }
+
+  .col-s-8 {
+    grid-column: span 8;
+  }
+
+  .col-s-9 {
+    grid-column: span 9;
+  }
+
+  .col-s-10 {
+    grid-column: span 10;
+  }
+
+  .col-s-11 {
+    grid-column: span 11;
+  }
+
+  .col-s-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 768px) {
+  .container-resp {
+    width: 720px;
+  }
+
+  .col-m-1 {
+    grid-column: span 1;
+  }
+
+  .col-m-2 {
+    grid-column: span 2;
+  }
+
+  .col-m-3 {
+    grid-column: span 3;
+  }
+
+  .col-m-4 {
+    grid-column: span 4;
+  }
+
+  .col-m-5 {
+    grid-column: span 5;
+  }
+
+  .col-m-6 {
+    grid-column: span 6;
+  }
+
+  .col-m-7 {
+    grid-column: span 7;
+  }
+
+  .col-m-8 {
+    grid-column: span 8;
+  }
+
+  .col-m-9 {
+    grid-column: span 9;
+  }
+
+  .col-m-10 {
+    grid-column: span 10;
+  }
+
+  .col-m-11 {
+    grid-column: span 11;
+  }
+
+  .col-m-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 1024px) {
+  .container-resp {
+    width: 1024px;
+  }
+
+  .col-l-1 {
+    grid-column: span 1;
+  }
+
+  .col-l-2 {
+    grid-column: span 2;
+  }
+
+  .col-l-3 {
+    grid-column: span 3;
+  }
+
+  .col-l-4 {
+    grid-column: span 4;
+  }
+
+  .col-l-5 {
+    grid-column: span 5;
+  }
+
+  .col-l-6 {
+    grid-column: span 6;
+  }
+
+  .col-l-7 {
+    grid-column: span 7;
+  }
+
+  .col-l-8 {
+    grid-column: span 8;
+  }
+
+  .col-l-9 {
+    grid-column: span 9;
+  }
+
+  .col-l-10 {
+    grid-column: span 10;
+  }
+
+  .col-l-11 {
+    grid-column: span 11;
+  }
+
+  .col-l-12 {
+    grid-column: span 12;
+  }
+}
+/* ------------------
+        OTHER
+------------------ */
+html * {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* CLEARFIX */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 0.5em;
+  border: 1px solid #aaa;
+  border-radius: 0.5em;
+  background-color: #fff;
+}
+
+.btn:hover {
+  background-color: #eee;
+}
+
+/* FORMS */
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #aaa;
+  border-radius: 0.5em;
+  background-color: #fff;
+}
+
+textarea {
+  resize: none;
+}
+
+/* ASPECT-RATIO-BOXES */
+.aspect-ratio-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.aspect-ratio-box::before {
+  display: block;
+  content: "";
+  width: 100%;
+}
+
+.aspect-ratio-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.ar-1-1::before {
+  padding-top: 100%;
+}
+
+.ar-4-3::before {
+  padding-top: 75%;
+}
+
+.ar-16-9::before {
+  padding-top: 56.25%;
+}
+
+.ar-16-10::before {
+  padding-top: 62.5%;
+}
+
+.ar-2-1::before {
+  padding-top: 50%;
+}
+
+/*======================
+------------------------
+         GRUDU
+a grid framework by pudu
+------------------------
+======================*/
+
+/*# sourceMappingURL=grudu.css.map */
